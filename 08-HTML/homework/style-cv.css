@@ -8,7 +8,7 @@ body {
     padding: 16px;
 }
 
-img {
+#imgCara {
     margin: 16px;
     max-width: 300px;
     border: 10px solid white;
@@ -93,4 +93,36 @@ a{
 
 h3 {
     margin-top: 48px;
+}
+
+main{
+    margin-bottom: 50px;
+}
+
+footer {
+    background: linear-gradient(to right,  rgb(0, 64, 255), rgb(41, 255, 241));
+    max-width: 960px;
+    margin: 10px auto;
+    padding-bottom: 48px;
+}
+
+#idLogosContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos{
+    width: 100px;
+}
+
+#pFooter{
+    text-align: center;
+    border-top: 1px solid white;
+    width: 200px;
+    color: white;
+    margin: 0 auto;
+    padding-top: 10px;
 }
