@@ -59,6 +59,15 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+
+  // var frase = palabras[0];
+  // for (var i = 0; i < palabras.length; i++){
+  //   frase = frase + " " + palabras[i]
+  // }
+  // return frase
+
+  // =
+
   for (var i = 0; i < palabras.length; i++){
     return palabras.join(" ")
   }
@@ -96,7 +105,7 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
   var promedio = 0;
   for (var i = 0; i < resultadosTest.length; i++){
-    promedio = (promedio + resultadosTest[i]);
+    promedio = promedio + resultadosTest[i];
     } return promedio / resultadosTest.length;
 }
 
@@ -124,22 +133,41 @@ function multiplicarArgumentos() {
   } else if (arguments.length === 1) {
     return arguments[0];
   }
+
   multiplica = 1;
   for (var i = 0; i < arguments.length; i++){
   multiplica = multiplica * arguments[i]
   } return multiplica;
+
+  // =
+
+  // var multiplica = arguments[0]
+  // for (var i = 1; i < arguments.length; i++){
+  //   multiplica *= arguments[i]
+  //   } return multiplica;
+
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 19.
   //Escribe tu código aquí
+  
   mayores = [];
   for (var i = 0; i < arreglo.length; i++){
     if (arreglo[i] > 19){
       mayores.push(arreglo[i])
     }
   } return mayores.length;
+
+  // =
+
+  // var cantidad = 0;
+  // for (var i = 0; i < arreglo.length; i++){
+  //   if (arreglo[i] > 19){
+  //     cantidad ++;
+  //   }
+  // } return cantidad
 }
 
 
@@ -150,9 +178,7 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
   if (numeroDeDia === 1 || numeroDeDia === 7) {
     return "Es fin de semana"
-  } else if (numeroDeDia > 1 || numeroDeDia < 7){
-    return "Es dia Laboral"
-  }
+  } return "Es dia Laboral"
 } 
 
 
@@ -160,7 +186,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  n = "'" + n + "'"; 
+  var n = "'" + n + "'"; 
   if (n[1] === '9') {
     return true;
   } return false;
